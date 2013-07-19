@@ -12,11 +12,12 @@ public class Game extends Canvas implements Runnable {
 	public static int scale = 3;
 	
 	private Thread thread;
-	private JFrame frame;
+	private JFrame window;
 	
 	public Game(){
 		Dimension size = new Dimension(width * scale, height * scale);
 		setPreferredSize(size);
+		window = new JFrame();
 	}
 	
 	public synchronized void start(){
@@ -36,7 +37,7 @@ public class Game extends Canvas implements Runnable {
 	
 	
 	public void run(){
-		
+		start();
 	}
 	
 }
