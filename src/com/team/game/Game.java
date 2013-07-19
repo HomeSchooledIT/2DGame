@@ -12,6 +12,10 @@ public class Game extends Canvas implements Runnable {
 	private Thread thread;
 	private JFrame frame;
 	
+	public Game(){
+		Dimention size = new Dimention(width * scale, height * scale)
+	}
+	
 	public synchronized void start(){
 		thread = new Thread(this, "Display");
 		thread.start();
